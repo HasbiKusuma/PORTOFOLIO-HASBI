@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="id" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hasbi Kusuma — Video Editor • Roblox Creator • DKV Specialist</title>
+  <meta name="description" content="Portofolio resmi Hasbi Kusuma. Video Editor (CapCut Pro PC Expert), Roblox Studio Level Designer, dan Content Creator lulusan DKV UBHINUS Malang.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+            mono: ['JetBrains Mono', 'ui-monospace', 'monospace']
+          },
+          colors: {
+            noir: {
+              950: '#060709',
+              900: '#0C0E12',
+              850: '#11141A',
+              800: '#171B23',
+              700: '#232936',
+              600: '#384152'
+            },
+            accent: {
+              lime: '#CCFF00',
+              blue: '#2563EB',
+              red: '#FF334B',
+              amber: '#F59E0B'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Clean Fonts: Inter + Space Grotesk + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #060709;
+      color: #E2E8F0;
+      letter-spacing: -0.015em;
+    }
+
+    /* AWWWARDS EDITORIAL HAIRLINE BORDERS */
+    .border-hairline {
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .border-hairline-bright {
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    /* CARD HOVER WITH SOLID ACCENT BORDER (NO AI GRADIENT) */
+    .awwward-card {
+      background: #0C0E12;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: border-color 0.25s ease, transform 0.25s ease, background 0.25s ease;
+    }
+    .awwward-card:hover {
+      border-color: rgba(255, 255, 255, 0.3);
+      transform: translateY(-4px);
+      background: #11141A;
+    }
+
+    /* RUNNING MARQUEE */
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-ticker {
+      display: flex;
+      width: 200%;
+      animation: marquee 22s linear infinite;
+    }
+    .animate-ticker:hover {
+      animation-play-state: paused;
+    }
+
+    /* SCROLLBAR */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #060709;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #232936;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #CCFF00;
+    }
+  </style>
+</head>
+<body class="bg-[#060709] text-zinc-100 antialiased selection:bg-[#CCFF00] selection:text-black">
+
+  <!-- TOP BAR: Status, Location, WhatsApp -->
+  <div class="bg-[#0C0E12] border-b border-white/5 sticky top-0 z-50 px-4 py-2 text-xs font-mono">
+    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2.5">
+        <span class="inline-block w-2 h-2 rounded-full bg-[#CCFF00] animate-pulse"></span>
+        <span class="font-bold text-white tracking-wider uppercase">HASBI KUSUMA</span>
+        <span class="text-zinc-600">/</span>
+        <span class="text-zinc-400">DKV UBHINUS (GPA 3.75) • MALANG & RIAU</span>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href="https://wa.me/6282214626935?text=Halo%20Hasbi,%20saya%20tertarik%20bekerjasama." target="_blank" class="font-bold text-[#CCFF00] hover:underline flex items-center gap-1.5 transition">
+          <span>●</span> WA: 0822-1462-6935
+        </a>
+        <a href="mailto:hasbikusuma007@gmail.com" class="text-zinc-400 hover:text-white hidden md:inline transition">
+          hasbikusuma007@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION (Swiss Editorial) -->
+  <header class="max-w-6xl mx-auto px-4 pt-6 pb-2">
+    <nav class="bg-[#0C0E12] border border-white/10 rounded-2xl px-6 py-4 flex items-center justify-between shadow-2xl">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-[#CCFF00] text-black font-black flex items-center justify-center font-mono text-sm">
+          HK
+        </div>
+        <div>
+          <h1 class="font-extrabold text-white tracking-tight leading-none text-base font-display">HASBI KUSUMA</h1>
+          <p class="text-[11px] font-mono text-zinc-500 uppercase mt-0.5">Video Editor & Roblox Dev</p>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center gap-7 text-xs font-mono uppercase tracking-wider text-zinc-400">
+        <a href="#about" class="hover:text-white transition">About & CV</a>
+        <a href="#roblox" class="hover:text-[#CCFF00] transition flex items-center gap-1">
+          <span class="text-[#CCFF00]">■</span> Roblox
+        </a>
+        <a href="#social" class="hover:text-[#FF334B] transition flex items-center gap-1">
+          <span class="text-[#FF334B]">■</span> TikTok & IG
+        </a>
+        <a href="#bingkai" class="hover:text-[#2563EB] transition flex items-center gap-1">
+          <span class="text-[#2563EB]">■</span> Bingkai Karya
+        </a>
+        <a href="#design" class="hover:text-white transition">Design</a>
+        <a href="#films" class="hover:text-white transition">Films</a>
+      </div>
+
+      <a href="https://wa.me/6282214626935?text=Halo%20Hasbi,%20saya%20melihat%20portofolio%20kamu." target="_blank" class="bg-white hover:bg-[#CCFF00] hover:text-black text-black px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition shadow flex items-center gap-2">
+        <span>Get in Touch</span> <span>→</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- EDITORIAL RUNNING TICKER -->
+  <div class="max-w-6xl mx-auto px-4 mt-4">
+    <div class="bg-[#0C0E12] border border-white/5 text-zinc-300 rounded-xl py-3 px-4 overflow-hidden relative font-mono text-xs uppercase tracking-widest">
+      <div class="animate-ticker flex items-center gap-8 whitespace-nowrap">
+        <span class="text-[#CCFF00] font-bold">ROBLOX MAP BUILDER</span>
+        <span class="text-zinc-600">/</span>
+        <span class="text-white font-bold">VIDEO EDITOR (CAPCUT PRO PC EXPERT)</span>
+        <span class="text-zinc-600">/</span>
+        <span class="text-[#2563EB] font-bold">STAGHORN & STAGE FESTIVAL CREATOR</span>
+        <span class="text-zinc-600">/</span>
+        <span class="text-[#FF334B] font-bold">SHORT-FORM VIRALITY (TIKTOK/REELS)</span>
+        <span class="text-zinc-600">/</span>
+        <span class="text-amber-400 font-bold">LUAU SCRIPTING & CUSTOM GUI</span>
+        <span class="text-zinc-600">/</span>
+        <span class="text-zinc-400 font-bold">COREL DRAW & APPAREL DESIGN</span>
+        <span class="text-zinc-600">/</span>
+        <!-- Loop duplicate -->
+        <span class="text-[#CCFF00] font-bold">ROBLOX MAP BUILDER</span>
+        <span class="text-zinc-600">/</span>
+        <span class="text-white font-bold">VIDEO EDITOR (CAPCUT PRO PC EXPERT)</span>
+        <span class="text-zinc-600">/</span>
+        <span class="text-[#2563EB] font-bold">STAGHORN & STAGE FESTIVAL CREATOR</span>
+        <span class="text-zinc-600">/</span>
+        <span class="text-[#FF334B] font-bold">SHORT-FORM VIRALITY (TIKTOK/REELS)</span>
+        <span class="text-zinc-600">/</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="max-w-6xl mx-auto px-4 py-8 space-y-20">
+
+    <!-- HERO SECTION (Awwwards Bento Grid) -->
+    <section class="bg-[#0C0E12] border border-white/10 rounded-3xl p-6 sm:p-10 md:p-12 relative overflow-hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Left: Statement & Typography -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-700/60 text-xs font-mono text-zinc-300">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#CCFF00]"></span>
+            <span>DKV UBHINUS Graduate • Multimedia & Roblox Specialist</span>
+          </div>
+
+          <h2 class="font-display font-extrabold text-4xl sm:text-6xl uppercase tracking-tighter text-white leading-[1.02]">
+            MENGUBAH VISI MENJADI <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-500">KARYA SINEMATIK</span> <br>
+            &amp; <span class="text-[#CCFF00]">DUNIA ROBLOX</span>.
+          </h2>
+
+          <p class="text-zinc-400 text-sm sm:text-base leading-relaxed max-w-xl font-normal">
+            Halo! Saya <strong>Hasbi Kusuma</strong>, sarjana Desain Komunikasi Visual (IPK 3.75). Fokus saya bertumpu pada <strong>Video Editing (CapCut Pro PC)</strong>, pembuatan <strong>Map 3D di Roblox Studio</strong>, serta strategi konten video pendek yang dirancang untuk retensi penonton tinggi.
+          </p>
+
+          <div class="pt-2 flex flex-wrap items-center gap-3 font-mono text-xs">
+            <a href="#roblox" class="bg-[#CCFF00] hover:bg-lime-400 text-black px-6 py-3.5 rounded-xl font-bold uppercase tracking-wider transition flex items-center gap-2">
+              <span>■</span> Roblox Map Projects
+            </a>
+            <a href="#social" class="bg-zinc-900 hover:bg-zinc-800 text-white border border-white/10 px-6 py-3.5 rounded-xl font-bold uppercase tracking-wider transition flex items-center gap-2">
+              <span>●</span> TikTok &amp; IG Preview
+            </a>
+          </div>
+
+          <!-- Editorial Metric Strip -->
+          <div class="pt-6 border-t border-white/5 grid grid-cols-3 gap-3 text-left font-mono">
+            <div class="bg-black/60 p-3.5 rounded-xl border border-white/5">
+              <div class="text-[10px] text-zinc-500 uppercase tracking-widest">[ IPK ]</div>
+              <div class="font-bold text-xl text-white mt-0.5">3.75 / 4.00</div>
+              <div class="text-[10px] text-zinc-400 mt-0.5">DKV UBHINUS</div>
+            </div>
+            <div class="bg-black/60 p-3.5 rounded-xl border border-white/5">
+              <div class="text-[10px] text-zinc-500 uppercase tracking-widest">[ CORE TOOL ]</div>
+              <div class="font-bold text-xl text-[#FF334B] mt-0.5">CapCut PC</div>
+              <div class="text-[10px] text-zinc-400 mt-0.5">Primary Video Editor</div>
+            </div>
+            <div class="bg-black/60 p-3.5 rounded-xl border border-white/5">
+              <div class="text-[10px] text-zinc-500 uppercase tracking-widest">[ 3D STUDIO ]</div>
+              <div class="font-bold text-xl text-[#2563EB] mt-0.5">Roblox</div>
+              <div class="text-[10px] text-zinc-400 mt-0.5">Stage &amp; Staghorn Map</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Hasbi Portrait Frame (Crisp Swiss Cut) -->
+        <div class="lg:col-span-5 flex flex-col items-center justify-center">
+          <div class="relative w-full max-w-[340px]">
+            <div class="bg-[#060709] border border-white/10 rounded-2xl overflow-hidden p-3 shadow-2xl">
+              <div class="relative aspect-[3/4] rounded-xl overflow-hidden bg-zinc-900">
+                <img src="assets/hasbi_photo.png" alt="Hasbi Kusuma" class="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition duration-500">
+                <div class="absolute bottom-3 left-3 right-3 bg-black/80 backdrop-blur-md p-3 rounded-lg border border-white/10 flex items-center justify-between text-xs font-mono">
+                  <div>
+                    <div class="font-bold text-white">HASBI KUSUMA</div>
+                    <div class="text-[10px] text-zinc-400">Content Creator &amp; Dev</div>
+                  </div>
+                  <span class="bg-[#CCFF00] text-black text-[10px] font-bold px-2 py-0.5 rounded">
+                    ACTIVE
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 1: ROBLOX CREATOR & MAP DEVELOPER -->
+    <section id="roblox" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/10 pb-6">
+        <div>
+          <span class="text-xs font-mono font-bold uppercase tracking-widest text-[#CCFF00]">[ 01 / ROBLOX STUDIO ]</span>
+          <h3 class="font-display font-black text-3xl sm:text-4xl uppercase text-white mt-1">
+            Roblox Creator &amp; Virtual World Building
+          </h3>
+          <p class="text-xs sm:text-sm text-zinc-400 mt-1 max-w-2xl font-normal">
+            Perancangan arsitektur map 3D di Roblox Studio, penataan pencahayaan Future Lighting, pembuatan GUI kustom, dan skrip interaktif menggunakan Luau.
+          </p>
+        </div>
+        <div class="text-xs font-mono text-zinc-500">
+          Staghorn Franchise • Stage Festival
+        </div>
+      </div>
+
+      <!-- DEV JOURNEY FEATURED BANNER -->
+      <div class="bg-[#0C0E12] border border-white/10 rounded-2xl p-6 sm:p-8 relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7 space-y-4">
+            <span class="bg-[#CCFF00] text-black text-[10px] font-mono font-bold px-2.5 py-1 rounded uppercase tracking-wider">
+              FEATURED DEVLOG
+            </span>
+            <h4 class="font-display font-black text-2xl sm:text-3xl uppercase text-white leading-tight">
+              Roblox Dev Journey: Proses Pembangunan Map dari Nol
+            </h4>
+            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed font-normal">
+              Dokumentasi video lengkap mengenai alur kerja saya dalam mengembangkan map Roblox: pemodelan struktur, penataan panggung beam lights konser, sistem spawn, dan pengujian interaksi player.
+            </p>
+            <div class="pt-2">
+              <button onclick="playLocalVideo('roblox/Roblox dev journey.mp4', 'Roblox Dev Journey - Pembuatan Map Roblox')" class="bg-white hover:bg-[#CCFF00] hover:text-black text-black font-mono font-bold px-6 py-3 rounded-xl text-xs uppercase tracking-wider transition flex items-center gap-2">
+                <span>▶</span> Putar Video Dev Journey
+              </button>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div class="relative bg-black rounded-xl overflow-hidden border border-white/10 aspect-video flex items-center justify-center cursor-pointer group" onclick="playLocalVideo('roblox/Roblox dev journey.mp4', 'Roblox Dev Journey - Pembuatan Map Roblox')">
+              <video src="roblox/Roblox dev journey.mp4" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition"></video>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-14 h-14 rounded-full bg-[#CCFF00] text-black flex items-center justify-center text-xl font-black shadow-2xl group-hover:scale-110 transition">
+                  ▶
+                </div>
+              </div>
+              <div class="absolute bottom-3 left-3 bg-black/90 px-2.5 py-1 rounded text-[10px] font-mono text-zinc-300 border border-white/10">
+                35 MB • MP4 Video
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ROBLOX MAP CARDS -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- 1. STAGE FESTIVAL -->
+        <div class="awwward-card rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div class="relative h-56 bg-zinc-950 overflow-hidden">
+            <img src="roblox/Stage Festival/Stage Post 1/1.png" alt="Stage Festival" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+            <div class="absolute top-3 left-3 bg-[#FF334B] text-white text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase">
+              Stage Festival
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[10px] font-mono text-zinc-500 uppercase">[ Concert &amp; Lighting ]</span>
+            <h4 class="font-bold text-white text-lg mt-1 font-display">Stage Festival Map &amp; Post Series</h4>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed font-normal">
+              Pembangunan area panggung konser virtual interaktif dengan pencahayaan dinamis untuk event festival musik.
+            </p>
+            <div class="mt-4 pt-4 border-t border-white/5 flex justify-between items-center text-xs font-mono">
+              <span class="text-zinc-500">Stage Post 1 &amp; 2</span>
+              <a href="https://www.tiktok.com/@stagefestival" target="_blank" class="text-[#CCFF00] hover:underline font-bold">
+                TikTok ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. STAGHORN HANGOUT -->
+        <div class="awwward-card rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div class="relative h-56 bg-zinc-950 overflow-hidden">
+            <img src="roblox/Staghorn Hangout/Thumbnail staghorn.jpg" alt="Staghorn Hangout" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+            <div class="absolute top-3 left-3 bg-amber-400 text-black text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase">
+              Staghorn Club
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[10px] font-mono text-zinc-500 uppercase">[ Community &amp; UI ]</span>
+            <h4 class="font-bold text-white text-lg mt-1 font-display">Staghorn Hangout Franchise</h4>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed font-normal">
+              Map komunitas "Staghorn" dan "Staghorn Club": sistem GUI custom, sistem ranking player, dan skrip interaktif Luau.
+            </p>
+            <div class="mt-4 pt-4 border-t border-white/5 flex justify-between items-center text-xs font-mono">
+              <span class="text-zinc-500">Luau Gameplay</span>
+              <a href="https://www.tiktok.com/@staghornhangout" target="_blank" class="text-[#CCFF00] hover:underline font-bold">
+                TikTok ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. DESA KABUT SENJA -->
+        <div class="awwward-card rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div class="relative h-56 bg-black flex flex-col items-center justify-center p-6 text-center">
+            <div class="w-12 h-12 rounded-xl bg-zinc-900 border border-white/10 text-white font-mono flex items-center justify-center text-xl mb-2">
+              🌫️
+            </div>
+            <h5 class="font-display font-black text-lg text-white">DESA KABUT SENJA</h5>
+            <p class="text-[11px] font-mono text-zinc-500 mt-1">Moody Fog &amp; Atmosphere</p>
+            <div class="absolute top-3 left-3 bg-zinc-800 text-white text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase">
+              World Design
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[10px] font-mono text-zinc-500 uppercase">[ Environment ]</span>
+            <h4 class="font-bold text-white text-lg mt-1 font-display">Desa Kabut Senja &amp; Tamper City</h4>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed font-normal">
+              Penataan kabut volumetrik, shading senja, dan arsitektur kota bergaya sinematik untuk background konten.
+            </p>
+            <div class="mt-4 pt-4 border-t border-white/5 flex justify-between items-center text-xs font-mono">
+              <span class="text-zinc-500">Atmospheric Video</span>
+              <button onclick="playLocalVideo('roblox/desa kabut senja 2.mp4', 'Desa Kabut Senja Showcase')" class="text-[#CCFF00] hover:underline font-bold">
+                Tonton Clip →
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: MULTI-CHANNEL PREVIEWS (TIKTOK & INSTAGRAM) -->
+    <section id="social" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/10 pb-6">
+        <div>
+          <span class="text-xs font-mono font-bold uppercase tracking-widest text-[#FF334B]">[ 02 / SOCIAL ECOSYSTEM ]</span>
+          <h3 class="font-display font-black text-3xl sm:text-4xl uppercase text-white mt-1">
+            Preview Channel TikTok &amp; Instagram
+          </h3>
+          <p class="text-xs sm:text-sm text-zinc-400 mt-1 max-w-2xl font-normal">
+            Daftar akun media sosial resmi yang saya bangun dan kelola untuk konten video Roblox, portofolio desain, dan karya visual:
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-mono text-xs">
+
+        <!-- 1. TIKTOK: @stagefestival -->
+        <div class="awwward-card rounded-2xl p-6 space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="bg-white text-black font-bold px-2 py-0.5 rounded text-[10px] uppercase">
+              TikTok
+            </span>
+            <span class="text-zinc-500">[ Roblox Concert ]</span>
+          </div>
+          <div>
+            <h4 class="font-display font-black text-xl text-white font-sans">@stagefestival</h4>
+            <p class="text-xs text-zinc-400 mt-1 font-normal font-sans">Akun resmi Stage Festival Roblox. Menampilkan stage visual, konser lighting DJ, dan festival virtual.</p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between">
+            <span class="text-zinc-500">Event &amp; Music</span>
+            <a href="https://www.tiktok.com/@stagefestival" target="_blank" class="bg-zinc-800 hover:bg-white hover:text-black text-white px-3.5 py-1.5 rounded-lg transition font-bold">
+              Buka TikTok ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. TIKTOK: @staghornhangout -->
+        <div class="awwward-card rounded-2xl p-6 space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="bg-white text-black font-bold px-2 py-0.5 rounded text-[10px] uppercase">
+              TikTok
+            </span>
+            <span class="text-zinc-500">[ Community ]</span>
+          </div>
+          <div>
+            <h4 class="font-display font-black text-xl text-white font-sans">@staghornhangout</h4>
+            <p class="text-xs text-zinc-400 mt-1 font-normal font-sans">Akun komunitas Staghorn Club. Berisi gameplay hangout, drama komunitas Roblox, dan sound viral.</p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between">
+            <span class="text-zinc-500">Hangout &amp; Gaming</span>
+            <a href="https://www.tiktok.com/@staghornhangout" target="_blank" class="bg-zinc-800 hover:bg-white hover:text-black text-white px-3.5 py-1.5 rounded-lg transition font-bold">
+              Buka TikTok ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. TIKTOK: @_hasbiiii -->
+        <div class="awwward-card rounded-2xl p-6 space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="bg-white text-black font-bold px-2 py-0.5 rounded text-[10px] uppercase">
+              TikTok
+            </span>
+            <span class="text-zinc-500">[ Personal ]</span>
+          </div>
+          <div>
+            <h4 class="font-display font-black text-xl text-white font-sans">@_hasbiiii</h4>
+            <p class="text-xs text-zinc-400 mt-1 font-normal font-sans">Akun TikTok personal Hasbi. Tempat eksplorasi video beat cut ritmik, game clips, dan tren terbaru.</p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between">
+            <span class="text-zinc-500">Creator &amp; Edits</span>
+            <a href="https://www.tiktok.com/@_hasbiiii" target="_blank" class="bg-zinc-800 hover:bg-white hover:text-black text-white px-3.5 py-1.5 rounded-lg transition font-bold">
+              Buka TikTok ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. INSTAGRAM: @good.folksociety -->
+        <div class="awwward-card rounded-2xl p-6 space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="bg-[#2563EB] text-white font-bold px-2 py-0.5 rounded text-[10px] uppercase">
+              Instagram
+            </span>
+            <span class="text-zinc-500">[ Virtual Merch ]</span>
+          </div>
+          <div>
+            <h4 class="font-display font-black text-xl text-white font-sans">@good.folksociety</h4>
+            <p class="text-xs text-zinc-400 mt-1 font-normal font-sans">Good Folk Society: identitas visual merchandise pakaian Roblox dan template streetwear komunitas.</p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between">
+            <span class="text-zinc-500">Streetwear Brand</span>
+            <a href="https://www.instagram.com/good.folksociety/" target="_blank" class="bg-zinc-800 hover:bg-white hover:text-black text-white px-3.5 py-1.5 rounded-lg transition font-bold">
+              Buka IG ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- 5. INSTAGRAM: @portofoliogdboy -->
+        <div class="awwward-card rounded-2xl p-6 space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="bg-[#2563EB] text-white font-bold px-2 py-0.5 rounded text-[10px] uppercase">
+              Instagram
+            </span>
+            <span class="text-zinc-500">[ Main Vault ]</span>
+          </div>
+          <div>
+            <h4 class="font-display font-black text-xl text-white font-sans">@portofoliogdboy</h4>
+            <p class="text-xs text-zinc-400 mt-1 font-normal font-sans">Etalase portofolio utama. Berisi feed poster, thumbnail YouTube, motion reels, dan visual identity.</p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between">
+            <span class="text-zinc-500">Design Portfolio</span>
+            <a href="https://www.instagram.com/portofoliogdboy" target="_blank" class="bg-zinc-800 hover:bg-white hover:text-black text-white px-3.5 py-1.5 rounded-lg transition font-bold">
+              Buka IG ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- 6. INSTAGRAM: @h__ku_ -->
+        <div class="awwward-card rounded-2xl p-6 space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="bg-[#2563EB] text-white font-bold px-2 py-0.5 rounded text-[10px] uppercase">
+              Instagram
+            </span>
+            <span class="text-zinc-500">[ Personal Feed ]</span>
+          </div>
+          <div>
+            <h4 class="font-display font-black text-xl text-white font-sans">@h__ku_</h4>
+            <p class="text-xs text-zinc-400 mt-1 font-normal font-sans">Akun Instagram personal. Menampilkan hasil video sinematik keseharian, fotografi, dan momen pribadi.</p>
+          </div>
+          <div class="pt-3 border-t border-white/5 flex items-center justify-between">
+            <span class="text-zinc-500">Personal Highlights</span>
+            <a href="https://www.instagram.com/h__ku_" target="_blank" class="bg-zinc-800 hover:bg-white hover:text-black text-white px-3.5 py-1.5 rounded-lg transition font-bold">
+              Buka IG ↗
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: BINGKAI KARYA SPOTLIGHT (Link Google Drive Feeds) -->
+    <section id="bingkai" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/10 pb-6">
+        <div>
+          <span class="text-xs font-mono font-bold uppercase tracking-widest text-[#2563EB]">[ 03 / AGENCY INTERNSHIP ]</span>
+          <h3 class="font-display font-black text-3xl sm:text-4xl uppercase text-white mt-1">
+            Bingkai Karya Media Production
+          </h3>
+          <p class="text-xs sm:text-sm text-zinc-400 mt-1 max-w-2xl font-normal">
+            Arsip hasil karya selama menjadi Content Creator &amp; Video Editor di Bingkai Karya:
+          </p>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1lwZGyfR1_-b9SA_m-mQFV-3e8pI8bNOE?usp=drive_link" target="_blank" class="bg-[#2563EB] hover:bg-blue-600 text-white font-mono font-bold px-5 py-2.5 rounded-xl text-xs uppercase tracking-wider transition shadow flex items-center gap-2 self-start md:self-auto">
+          <span>📂</span> Buka Google Drive Feeds Bingkai Karya ↗
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <div class="awwward-card rounded-2xl p-4 flex flex-col justify-between">
+          <div class="h-44 rounded-xl overflow-hidden bg-black mb-3">
+            <img src="assets/reels_bingkai.png" alt="Reels Bingkai" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h5 class="font-bold text-white text-sm font-sans">Instagram Reels &amp; QnA</h5>
+            <p class="text-xs text-zinc-400 mt-1 leading-relaxed font-normal">Produksi video tanya jawab dan serial konten reels agensi.</p>
+          </div>
+          <div class="mt-3 pt-3 border-t border-white/5 text-right font-mono text-[11px] text-[#2563EB]">
+            Bingkai Karya
+          </div>
+        </div>
+
+        <div class="awwward-card rounded-2xl p-4 flex flex-col justify-between">
+          <div class="h-44 rounded-xl overflow-hidden bg-black mb-3">
+            <img src="assets/podcast.png" alt="Podcast Monitoring" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h5 class="font-bold text-white text-sm font-sans">Podcast Audio-Video Studio</h5>
+            <p class="text-xs text-zinc-400 mt-1 leading-relaxed font-normal">Perekaman podcast multi-cam, pemotongan timeline, dan audio clean up.</p>
+          </div>
+          <div class="mt-3 pt-3 border-t border-white/5 text-right font-mono text-[11px] text-[#2563EB]">
+            Multi-Cam
+          </div>
+        </div>
+
+        <div class="awwward-card rounded-2xl p-4 flex flex-col justify-between">
+          <div class="h-44 rounded-xl overflow-hidden bg-black mb-3">
+            <img src="assets/feed_photo.png" alt="Feed Photography" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h5 class="font-bold text-white text-sm font-sans">Feed Photography &amp; Stories</h5>
+            <p class="text-xs text-zinc-400 mt-1 leading-relaxed font-normal">Desain postingan feed Instagram bertema estetik dan carousel visual.</p>
+          </div>
+          <div class="mt-3 pt-3 border-t border-white/5 text-right font-mono text-[11px] text-[#2563EB]">
+            Feed Design
+          </div>
+        </div>
+
+        <div class="awwward-card rounded-2xl p-4 flex flex-col justify-between">
+          <div class="h-44 rounded-xl overflow-hidden bg-black mb-3">
+            <img src="assets/take_video.png" alt="Take Video" class="w-full h-full object-cover">
+          </div>
+          <div>
+            <h5 class="font-bold text-white text-sm font-sans">Talent &amp; Shooting Lapangan</h5>
+            <p class="text-xs text-zinc-400 mt-1 leading-relaxed font-normal">Pengalaman menjadi talent di depan kamera serta pengambilan footage.</p>
+          </div>
+          <div class="mt-3 pt-3 border-t border-white/5 text-right font-mono text-[11px] text-[#2563EB]">
+            Production
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: NON-VIDEO GRAPHIC DESIGN VAULT (Portofolio 2022-2023) -->
+    <section id="design" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/10 pb-6">
+        <div>
+          <span class="text-xs font-mono font-bold uppercase tracking-widest text-white">[ 04 / PRINT &amp; PACKAGING ]</span>
+          <h3 class="font-display font-black text-3xl sm:text-4xl uppercase text-white mt-1">
+            Karya Desain Grafis, Kemasan &amp; Apparel
+          </h3>
+          <p class="text-xs sm:text-sm text-zinc-400 mt-1 max-w-2xl font-normal">
+            Arsip karya desain grafis non-video: poster ilustrasi 2D/3D, desain kemasan produk, dan rancangan apparel streetwear:
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 font-mono">
+
+        <!-- 1. POSTER 2D -->
+        <div class="awwward-card rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div class="h-64 bg-zinc-950 overflow-hidden">
+            <img src="assets/design_works/design_p5_25.png" alt="Poster Animasi 2D" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+          </div>
+          <div class="p-5 font-sans">
+            <span class="text-[10px] font-mono text-zinc-500 uppercase">[ Illustration ]</span>
+            <h5 class="font-bold text-white text-base mt-1">Poster Animasi 2D</h5>
+            <p class="text-xs text-zinc-400 mt-1 leading-relaxed font-normal">Eksplorasi komposisi ilustrasi karakter dan tata letak teks.</p>
+          </div>
+        </div>
+
+        <!-- 2. DESAIN KEMASAN -->
+        <div class="awwward-card rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div class="h-64 bg-zinc-950 overflow-hidden">
+            <img src="assets/design_works/design_p5_26.png" alt="Desain Kemasan" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+          </div>
+          <div class="p-5 font-sans">
+            <span class="text-[10px] font-mono text-zinc-500 uppercase">[ Packaging ]</span>
+            <h5 class="font-bold text-white text-base mt-1">Desain Kemasan Komputer Grafis</h5>
+            <p class="text-xs text-zinc-400 mt-1 leading-relaxed font-normal">Perancangan layout jaring-jaring box kemasan dan grafis produk.</p>
+          </div>
+        </div>
+
+        <!-- 3. POSTER 3D & COVER -->
+        <div class="awwward-card rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div class="h-64 bg-zinc-950 overflow-hidden">
+            <img src="assets/design_works/design_p6_28.png" alt="Poster 3D & Cover" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+          </div>
+          <div class="p-5 font-sans">
+            <span class="text-[10px] font-mono text-zinc-500 uppercase">[ 3D Visual ]</span>
+            <h5 class="font-bold text-white text-base mt-1">Poster Animasi 3D &amp; Cover Book</h5>
+            <p class="text-xs text-zinc-400 mt-1 leading-relaxed font-normal">Desain sampul buku dan poster dengan lighting dramatis 3 dimensi.</p>
+          </div>
+        </div>
+
+        <!-- 4. APPAREL STREETWEAR -->
+        <div class="awwward-card rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div class="h-64 bg-zinc-950 overflow-hidden">
+            <img src="assets/design_works/design_p6_33.png" alt="Desain Kaos & Sweater" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+          </div>
+          <div class="p-5 font-sans">
+            <span class="text-[10px] font-mono text-zinc-500 uppercase">[ Streetwear ]</span>
+            <h5 class="font-bold text-white text-base mt-1">Desain Kaos &amp; Sweater</h5>
+            <p class="text-xs text-zinc-400 mt-1 leading-relaxed font-normal">Artwork sablon pakaian bertema tipografi modern untuk brand fashion.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: REALISTIC SKILL MATRIX (Sesuai Kejujuran Hasbi) -->
+    <section id="about" class="bg-[#0C0E12] border border-white/10 rounded-3xl p-6 sm:p-10 space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/10 pb-6">
+        <div>
+          <span class="text-xs font-mono font-bold uppercase tracking-widest text-[#CCFF00]">[ 05 / CAPABILITIES &amp; CV ]</span>
+          <h3 class="font-display font-black text-3xl sm:text-4xl uppercase text-white mt-1">
+            Matriks Keahlian &amp; Riwayat Akademik
+          </h3>
+          <p class="text-xs sm:text-sm text-zinc-400 mt-1 font-normal">
+            Pemetaan keahlian yang diselaraskan secara akurat berdasarkan pengalaman lapangan nyata:
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Kolom 1: Core Competency -->
+        <div class="space-y-4">
+          <h4 class="font-mono text-xs font-bold uppercase text-white flex items-center gap-2">
+            <span class="text-[#CCFF00]">■</span> Keahlian Utama (Primary Focus)
+          </h4>
+
+          <div class="space-y-3 font-mono text-xs">
+            <div class="bg-black/60 p-4 rounded-xl border border-white/10">
+              <div class="flex justify-between items-center font-bold">
+                <span class="text-white">Video Editing (CapCut Pro PC)</span>
+                <span class="text-[#CCFF00]">EXPERT</span>
+              </div>
+              <p class="text-[11px] text-zinc-400 mt-1 font-sans font-normal">Pacing sinematik, beat sync sound design, text motion, dan efisiensi timeline tinggi.</p>
+            </div>
+
+            <div class="bg-black/60 p-4 rounded-xl border border-white/10">
+              <div class="flex justify-between items-center font-bold">
+                <span class="text-white">Roblox Studio &amp; Level Design</span>
+                <span class="text-[#2563EB]">ADVANCED</span>
+              </div>
+              <p class="text-[11px] text-zinc-400 mt-1 font-sans font-normal">Pembangunan map panggung, penataan Future Lighting, GUI, dan skrip Luau.</p>
+            </div>
+
+            <div class="bg-black/60 p-4 rounded-xl border border-white/10">
+              <div class="flex justify-between items-center font-bold">
+                <span class="text-white">Short-Form Virality (TikTok/Reels)</span>
+                <span class="text-[#FF334B]">ADVANCED</span>
+              </div>
+              <p class="text-[11px] text-zinc-400 mt-1 font-sans font-normal">Riset tren sound, hook visual 3 detik awal, dan struktur retensi video.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kolom 2: Software Pendukung -->
+        <div class="space-y-4">
+          <h4 class="font-mono text-xs font-bold uppercase text-white flex items-center gap-2">
+            <span class="text-zinc-400">■</span> Software &amp; Vektor Cetak
+          </h4>
+
+          <div class="space-y-3 font-mono text-xs">
+            <div class="bg-black/60 p-4 rounded-xl border border-white/5">
+              <div class="flex justify-between items-center font-bold">
+                <span class="text-white">CorelDRAW</span>
+                <span class="text-zinc-300">INTERMEDIATE</span>
+              </div>
+              <p class="text-[11px] text-zinc-400 mt-1 font-sans font-normal">Desain kemasan box, tracing logo vektor, dan tata letak persiapan cetak.</p>
+            </div>
+
+            <div class="bg-black/60 p-4 rounded-xl border border-white/5">
+              <div class="flex justify-between items-center font-bold">
+                <span class="text-white">Adobe Photoshop &amp; Canva</span>
+                <span class="text-zinc-400">MENENGAH</span>
+              </div>
+              <p class="text-[11px] text-zinc-400 mt-1 font-sans font-normal">Pembuatan cover thumbnail YouTube, manipulasi gambar dasar, dan feed.</p>
+            </div>
+
+            <div class="bg-black/60 p-4 rounded-xl border border-white/5">
+              <div class="flex justify-between items-center font-bold">
+                <span class="text-white">Adobe Premiere Pro</span>
+                <span class="text-zinc-500">DEVELOPING</span>
+              </div>
+              <p class="text-[11px] text-zinc-400 mt-1 font-sans font-normal">Familiar dengan timeline dasar editing video.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kolom 3: Pendidikan & Riwayat -->
+        <div class="space-y-4">
+          <h4 class="font-mono text-xs font-bold uppercase text-white flex items-center gap-2">
+            <span class="text-white">■</span> Rekam Jejak &amp; Prestasi
+          </h4>
+
+          <div class="space-y-3 font-mono text-xs">
+            <div class="bg-black/60 p-4 rounded-xl border border-white/5">
+              <div class="text-[10px] text-[#CCFF00]">2021 - 2025 • GPA 3.75</div>
+              <div class="font-bold text-white text-sm font-sans mt-0.5">S1 Desain Komunikasi Visual (DKV)</div>
+              <div class="text-[11px] text-zinc-400 font-sans font-normal">Universitas Bhinneka Nusantara Malang (UBHINUS)</div>
+            </div>
+
+            <div class="bg-black/60 p-4 rounded-xl border border-white/5">
+              <div class="text-[10px] text-zinc-500">2023 - 2024</div>
+              <div class="font-bold text-white text-sm font-sans mt-0.5">Content Creator &amp; Video Editor</div>
+              <div class="text-[11px] text-zinc-400 font-sans font-normal">Bingkai Karya Media</div>
+            </div>
+
+            <div class="bg-black/60 p-4 rounded-xl border border-white/5">
+              <div class="text-[10px] text-zinc-500">KOMPETISI NASIONAL</div>
+              <div class="font-bold text-white text-sm font-sans mt-0.5">LIDM 2023 &amp; LO Kreatif 2021-2022</div>
+              <div class="text-[11px] text-zinc-400 font-sans font-normal">Editor &amp; Talent Video Nasional</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: FILMS & DOKUMENTER -->
+    <section id="films" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/10 pb-6">
+        <div>
+          <span class="text-xs font-mono font-bold uppercase tracking-widest text-[#FF334B]">[ 06 / CINEMATICS ]</span>
+          <h3 class="font-display font-black text-3xl sm:text-4xl uppercase text-white mt-1">
+            Dokumenter Budaya &amp; Video Sinematik
+          </h3>
+          <p class="text-xs sm:text-sm text-zinc-400 mt-1 max-w-2xl font-normal">
+            Karya film dokumenter berdurasi penuh, video institusional kampus, dan dokumentasi pernikahan sakral:
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- 1. JARANAN BUTO -->
+        <div class="awwward-card rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div class="relative h-56 bg-zinc-950 overflow-hidden flex items-center justify-center">
+            <div class="w-14 h-14 rounded-full bg-white text-black flex items-center justify-center text-xl font-bold shadow-2xl z-20">
+              ▶
+            </div>
+            <div class="absolute top-3 left-3 bg-[#FF334B] text-white text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase">
+              Dokumenter
+            </div>
+            <div class="absolute bottom-3 left-3 text-white font-mono text-[11px]">
+              1.38 GB • Sinematik 4K
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="font-bold text-white text-lg font-display">Menjaga Warisan Jaranan Buto Di Tanah Riau</h4>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed font-normal">
+              Film dokumenter budaya mendalam mengenai dedikasi seniman Jaranan Buto di Riau dalam menjaga tradisi sakral.
+            </p>
+            <div class="mt-4 pt-4 border-t border-white/5 flex justify-between items-center text-xs font-mono">
+              <span class="text-zinc-500">CapCut PC Edited</span>
+              <a href="https://drive.google.com/drive/folders/1pO6F6_bB4EriSdjtimM3N0iyKeKA8Q8i?usp=drive_link" target="_blank" class="text-[#CCFF00] hover:underline font-bold">
+                Buka di Drive ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. RISA & SARWONO -->
+        <div class="awwward-card rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div class="relative h-56 bg-zinc-950 overflow-hidden flex items-center justify-center">
+            <img src="assets/cover_risa.jpg" alt="Risa & Sarwono" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="w-14 h-14 rounded-full bg-white text-black flex items-center justify-center text-xl font-bold shadow-2xl z-20">
+              ▶
+            </div>
+            <div class="absolute top-3 left-3 bg-white text-black text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase">
+              Wedding
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="font-bold text-white text-lg font-display">Risa &amp; Sarwono: Engagement Film</h4>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed font-normal">
+              Video pertunangan intim dengan tone warna warm pastel dan penataan komposisi frame kamera sinematik.
+            </p>
+            <div class="mt-4 pt-4 border-t border-white/5 flex justify-between items-center text-xs font-mono">
+              <span class="text-zinc-500">101 MB • HD</span>
+              <a href="https://drive.google.com/drive/folders/1pO6F6_bB4EriSdjtimM3N0iyKeKA8Q8i?usp=drive_link" target="_blank" class="text-[#CCFF00] hover:underline font-bold">
+                Buka di Drive ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. BANTENGAN MAHESO JAGAD SEDJATI -->
+        <div class="awwward-card rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div class="relative h-56 bg-zinc-950 overflow-hidden flex items-center justify-center">
+            <div class="w-14 h-14 rounded-full bg-white text-black flex items-center justify-center text-xl font-bold shadow-2xl z-20">
+              ▶
+            </div>
+            <div class="absolute top-3 left-3 bg-amber-400 text-black text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase">
+              Bantengan
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="font-bold text-white text-lg font-display">Dokumentasi Bantengan Maheso Jagad Sedjati</h4>
+            <p class="text-xs text-zinc-400 mt-2 leading-relaxed font-normal">
+              Liputan aksi seni tradisional Bantengan dengan ritme cepat gamelan dan slow-mo dramatis atraksi.
+            </p>
+            <div class="mt-4 pt-4 border-t border-white/5 flex justify-between items-center text-xs font-mono">
+              <span class="text-zinc-500">752 MB • Film</span>
+              <a href="https://drive.google.com/drive/folders/1pO6F6_bB4EriSdjtimM3N0iyKeKA8Q8i?usp=drive_link" target="_blank" class="text-[#CCFF00] hover:underline font-bold">
+                Buka di Drive ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <footer class="bg-[#0C0E12] border border-white/10 rounded-3xl p-8 sm:p-12 relative overflow-hidden font-mono">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-8 space-y-3 font-sans">
+          <span class="text-xs font-mono font-bold uppercase tracking-widest text-[#CCFF00]">[ OPEN FOR COLLABORATION ]</span>
+          <h3 class="font-display font-black text-3xl sm:text-5xl uppercase text-white leading-tight">
+            Mari Wujudkan Projek <br>
+            <span class="text-white">Visual &amp; Roblox Anda.</span>
+          </h3>
+          <p class="text-zinc-400 text-xs sm:text-sm max-w-lg leading-relaxed font-normal">
+            Tersedia untuk tawaran freelance video editing (CapCut PC), pembangunan level map Roblox Studio, serta konten sosial media.
+          </p>
+
+          <div class="pt-2 flex flex-wrap items-center gap-4 text-xs font-mono text-zinc-400">
+            <span>● 0822-1462-6935</span>
+            <span>/</span>
+            <span>hasbikusuma007@gmail.com</span>
+            <span>/</span>
+            <span>Malang &amp; Riau</span>
+          </div>
+        </div>
+
+        <div class="md:col-span-4 flex flex-col gap-3 font-mono text-xs">
+          <a href="https://wa.me/6282214626935?text=Halo%20Hasbi,%20saya%20tertarik%20bekerjasama." target="_blank" class="bg-[#CCFF00] hover:bg-lime-400 text-black font-bold py-4 px-6 rounded-xl text-center uppercase tracking-wider transition shadow">
+            Chat WhatsApp Sekarang ↗
+          </a>
+          <a href="https://www.tiktok.com/@_hasbiiii" target="_blank" class="bg-zinc-900 hover:bg-zinc-800 text-white border border-white/10 font-bold py-3 px-6 rounded-xl text-center uppercase tracking-wider transition">
+            TikTok @_hasbiiii
+          </a>
+          <a href="https://www.instagram.com/good.folksociety/" target="_blank" class="bg-zinc-900 hover:bg-zinc-800 text-white border border-white/10 font-bold py-3 px-6 rounded-xl text-center uppercase tracking-wider transition">
+            Instagram @good.folksociety
+          </a>
+        </div>
+      </div>
+      
+      <div class="mt-12 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-500 gap-2">
+        <p>© 2026 Hasbi Kusuma. All Rights Reserved.</p>
+        <p>DKV UBHINUS Malang • Bingkai Karya • Roblox Creator</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- VIDEO PLAYER MODAL -->
+  <div id="videoModal" class="fixed inset-0 bg-black/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-[#0C0E12] border border-white/10 rounded-2xl max-w-2xl w-full p-6 space-y-4 shadow-2xl relative">
+      <button onclick="closeVideoModal()" class="absolute top-5 right-5 w-8 h-8 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-white font-mono font-bold flex items-center justify-center text-xs transition">
+        ✕
+      </button>
+
+      <h3 id="modalVideoTitle" class="font-display font-black text-lg text-white">Video Preview</h3>
+
+      <div class="relative bg-black rounded-xl overflow-hidden aspect-video border border-white/10">
+        <video id="modalVideoPlayer" controls class="w-full h-full object-contain"></video>
+      </div>
+
+      <div class="flex justify-end pt-2 font-mono text-xs">
+        <button onclick="closeVideoModal()" class="bg-zinc-800 hover:bg-zinc-700 text-white font-bold px-5 py-2 rounded-lg transition">
+          Tutup Pemutar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function playLocalVideo(src, title) {
+      const modal = document.getElementById('videoModal');
+      const player = document.getElementById('modalVideoPlayer');
+      const titleEl = document.getElementById('modalVideoTitle');
+      titleEl.innerText = title;
+      player.src = src;
+      modal.classList.remove('hidden');
+      player.play();
+    }
+
+    function closeVideoModal() {
+      const modal = document.getElementById('videoModal');
+      const player = document.getElementById('modalVideoPlayer');
+      player.pause();
+      player.src = '';
+      modal.classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
